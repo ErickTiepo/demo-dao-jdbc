@@ -3,16 +3,16 @@ package model.entities;
 import java.io.Serializable;
 import java.util.Objects;
 
-public class Department implements Serializable {
+public class Seller implements Serializable {
 
     private Integer id;
     private String name;
 
-    public Department() {
+    public Seller() {
 
     }
 
-    public Department(Integer id, String name) {
+    public Seller(Integer id, String name) {
         this.id = id;
         this.name = name;
     }
@@ -36,7 +36,7 @@ public class Department implements Serializable {
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
-        Department that = (Department) o;
+        Seller that = (Seller) o;
         return Objects.equals(id, that.id);
     }
 
