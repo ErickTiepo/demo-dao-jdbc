@@ -1,6 +1,6 @@
 package application;
 
-import model.Seller;
+import model.entities.Seller;
 import model.dao.DaoFactory;
 import model.dao.SellerDao;
 import model.entities.Department;
@@ -23,6 +23,14 @@ public class Program {
 
         Department department = new Department(2, null);
         List<Seller> list = sellerDao.findByDepartment(department);
+
+        for (Seller obj : list) {
+            System.out.println(obj);
+        }
+
+        System.out.println("\n=== TEST 3: seller findByAll ===");
+
+        list = sellerDao.findAll();
 
         for (Seller obj : list) {
             System.out.println(obj);

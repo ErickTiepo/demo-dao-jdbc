@@ -1,6 +1,4 @@
-package model;
-
-import model.entities.Department;
+package model.entities;
 
 import java.io.Serializable;
 import java.time.LocalDate;

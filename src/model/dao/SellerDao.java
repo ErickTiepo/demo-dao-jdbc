@@ -1,6 +1,6 @@
 package model.dao;
 
-import model.Seller;
+import model.entities.Seller;
 import model.entities.Department;
 
 
